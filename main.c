@@ -19,17 +19,12 @@ int main(int argc, const char * argv[]) {
     OPERATION option = 0;
     
     n_elems = sizeof(vector1)/sizeof(vector1[0]);
-    my_op[0] = arithmetic_sum;
-    my_op[1] = arithmetic_subtract;
-    my_op[2] = arithmetic_mult;
-    my_op[3] = arithmetic_divide;
-//    save_data(my_op);
+    save_data(my_op);
     
     puts("Select Operation");
     scanf("%uz", &option);
 
     my_op[option](vector1, vector2, n_elems, result);
-    
     for(size_t idx = 0; idx<n_elems; idx++) printf("My vector sum: %lf\n", result[idx]);
 
     return 0;

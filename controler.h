@@ -11,6 +11,6 @@
 #include <stdio.h>
 #include "arithmetic.h"
 
-void save_data(double (*my_op[4])(double *, double *, size_t, double *));
+void save_data(void (*my_op[4])(double *, double *, size_t, double *));
 
 #endif /* controler_h */
